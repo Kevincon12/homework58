@@ -3,11 +3,12 @@ import './App.css'
 import Modal from "./UI/Modal/Modal.tsx";
 
 const App = () => {
-  const [count, setCount] = useState(0)
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <>
-        <Modal />
+        <button className='btn btn-primary' type='button'>Show modal</button>
+        <Modal show={showModal}/>
     </>
   )
 };
