@@ -12,9 +12,12 @@ const App = () => {
             type='button'
             onClick={() => {setShowModal(true)}}
             >
-            Show modal
+            Show modal lvl1
         </button>
-        <Modal show={showModal}/>
+        <Modal show={showModal} title={"Custom modal title"}>
+            <h3>Modal content</h3>
+            <button className='btn btn-warning' onClick={() => {setShowModal(false)}}>Close modal</button>
+        </Modal>
     </>
   )
 };
