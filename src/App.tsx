@@ -7,7 +7,13 @@ const App = () => {
 
   return (
     <>
-        <button className='btn btn-primary' type='button'>Show modal</button>
+        <button
+            className='btn btn-primary m-3'
+            type='button'
+            onClick={() => {setShowModal(true)}}
+            >
+            Show modal
+        </button>
         <Modal show={showModal}/>
     </>
   )
